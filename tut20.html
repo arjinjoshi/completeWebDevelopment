@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            border: 0;
+        }
+        body{
+            background-color: #a05f849c;
+        }
+
+
+        .container{
+            background-color: rgb(191, 231, 236);
+            border: 3px solid rgb(17, 38, 134);
+            /* padding: 79px; */
+            /* We can get margin/padding for top, bottom, left, right like this  */
+            /* padding-top: 709px; */
+            /* padding-bottom: 709px; */
+            /* padding-left: 709px; */
+            /* padding-right: 709px; */
+
+
+            /* margin-top: 3px;
+            margin-bottom: 5px;
+            margin-left: 34px;
+            margin-right: 23px; */
+
+
+            /* padding = top right bottom left */
+            /* padding: 23px 56px 6px 79px ; */ 
+            /*margin = top right bottom left */
+            /* margin: 23px 56px 6px 79px ; */ 
+
+
+            /* padding: y(top/bottom) x(left/right)   */
+            padding : 34px 19px;
+            /* margin: y(top/bottom) x(left/right)   */
+            margin: 14px 19px;
+            border-radius: 23px;
+            width: 533px ;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<div class="container"> 
+        <body>
+    <h3>This is heading</h3>
+    <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, tenetur consectetur eveniet libero exercitationem assumenda aspernatur earum provident consequuntur officiis nemo beatae eum!</p>
+    </div>
+    <div class="container"> 
+    <h3>This is heading</h3>
+    <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, tenetur consectetur eveniet libero exercitationem assumenda aspernatur earum provident consequuntur officiis nemo beatae eum!</p>
+    </div>
+    <div class="container"> 
+    <h3>This is heading</h3>
+    <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, tenetur consectetur eveniet libero exercitationem assumenda aspernatur earum provident consequuntur officiis nemo beatae eum!</p>
+    </div>
+</body>
+</html>

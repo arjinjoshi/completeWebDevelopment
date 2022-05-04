@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+            display:flex;
+            text-shadow: 3px 2px 6px white;
+        }
+        .card{
+            margin: 23px 12px;
+            padding: 23px 12px;
+            border:2px solid red;
+            /* background-color: burlywood; */
+            content: "";
+            background: url('https://source.unsplash.com/user/erondu/1600x900') no-repeat center/cover;
+            z-index: -1;
+            /* box-shadow: offset-x offset-y color; */
+
+            
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* box-shadow: 10px 13px 16px green;
+            box-shadow: -10px -13px 16px green;
+            box-shadow:7px 5px 8px green;
+            box-shadow:-7px -5px 8px green; */
+
+
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            /* box-shadow:-7px -5px 8px 4px green; */
+
+            /* box-shadow:-7px -5px 10px 34px rgba(98, 211, 211, 0.5); */
+
+            box-shadow: inset 3px 5px green;
+            box-shadow: 3px 5px green, 4px 6px red;
+        }
+
+        .card h2{
+            /* text-shadow: 2px 4px red; */
+            text-shadow: 3px 2px 6px red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="car-1">
+            <h2> This is C++ Course </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi doloremque debitis veniam aspernatur impedit eius dolores obcaecati, error quam earum quas exercitationem excepturi, rem ad natus vitae laboriosam? Inventore quam a repellendus ad deserunt.</p>
+        </div>
+        <div class="card" id="car-2">
+            <h2> This is HTML Course </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi reprehenderit perferendis assumenda numquam fugit sit eaque pariatur eum magnam consequatur et accusamus libero beatae laudantium, aliquam dolorem dolor non error exercitationem sequi eligendi? Autem.</p>
+        </div>
+        <div class="card" id="car-3">
+            <h2> Card3 </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quaerat laborum, rem officia ullam dicta et esse libero sed nostrum nihil dolore vitae delectus debitis laboriosam. Eligendi consectetur nisi ipsa voluptatum repellat nesciunt vel.</p>
+        </div>
+    </div>
+</body>
+</html>
